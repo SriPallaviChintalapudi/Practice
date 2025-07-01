@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-25T22:35:51 IST" name="Default suite" finished-at="2025-06-25T22:35:54 IST" duration-ms="3492">
+  <suite started-at="2025-07-01T11:44:31 IST" name="Default suite" finished-at="2025-07-01T11:44:44 IST" duration-ms="13128">
     <groups>
     </groups>
-    <test started-at="2025-06-25T22:35:51 IST" name="Default test" finished-at="2025-06-25T22:35:54 IST" duration-ms="3492">
-      <class name="codes.SecondAssignment">
-        <test-method is-config="true" signature="OpenURL()[pri:0, instance:codes.SecondAssignment@57ea113a]" started-at="2025-06-25T22:35:51 IST" name="OpenURL" finished-at="2025-06-25T22:35:53 IST" duration-ms="1889" status="PASS">
+    <test started-at="2025-07-01T11:44:31 IST" name="Default test" finished-at="2025-07-01T11:44:44 IST" duration-ms="13128">
+      <class name="codes.Practice">
+        <test-method is-config="true" signature="OPenURL()[pri:0, instance:codes.Practice@57ea113a]" started-at="2025-07-01T11:44:31 IST" name="OPenURL" finished-at="2025-07-01T11:44:44 IST" duration-ms="12738" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- OpenURL -->
-        <test-method signature="Locators()[pri:0, instance:codes.SecondAssignment@57ea113a]" started-at="2025-06-25T22:35:53 IST" name="Locators" finished-at="2025-06-25T22:35:54 IST" duration-ms="1417" status="PASS">
+        </test-method> <!-- OPenURL -->
+        <test-method signature="TestCase()[pri:0, instance:codes.Practice@57ea113a]" started-at="2025-07-01T11:44:44 IST" name="TestCase" finished-at="2025-07-01T11:44:44 IST" duration-ms="263" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Locators -->
-        <test-method is-config="true" signature="CloseURL()[pri:0, instance:codes.SecondAssignment@57ea113a]" started-at="2025-06-25T22:35:54 IST" name="CloseURL" finished-at="2025-06-25T22:35:54 IST" duration-ms="140" status="PASS">
+        </test-method> <!-- TestCase -->
+        <test-method is-config="true" signature="Close()[pri:0, instance:codes.Practice@57ea113a]" started-at="2025-07-01T11:44:44 IST" name="Close" finished-at="2025-07-01T11:44:44 IST" duration-ms="89" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CloseURL -->
-      </class> <!-- codes.SecondAssignment -->
+        </test-method> <!-- Close -->
+      </class> <!-- codes.Practice -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
