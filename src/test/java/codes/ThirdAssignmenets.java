@@ -16,7 +16,7 @@ import org.testng.asserts.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class ThirdAssignmenet {
+public class ThirdAssignmenets {
 	WebDriver driver = new ChromeDriver();
 	
 	@BeforeTest
