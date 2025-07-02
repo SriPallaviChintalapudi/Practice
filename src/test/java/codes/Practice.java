@@ -21,7 +21,7 @@ public class Practice {
 	public void OPenURL() {
 		driver.get("https://rahulshettyacademy.com/AutomationPractice/");
 		driver.manage().window().maximize();
-		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
 	}
 	@Test
@@ -38,27 +38,26 @@ public class Practice {
 	public void TestCase2() {
 		WebElement DropDown = driver.findElement(By.id("autocomplete"));
 		DropDown.click();
-		DropDown.sendKeys("I");
-		
+		DropDown.sendKeys("ind");
 		List<WebElement> dropdownOptions = driver.findElements(By.xpath("//li[contains(@class, 'ui-menu-item')]/div"));
 		for(WebElement options:dropdownOptions) {
-			if(options.getText().equalsIgnoreCase("India")) {
+			if(options.getText().equalsIgnoreCase("india")) {
 				options.click();
 			}
 		}
 //		String GetText = DropDown.getText();
-        String selectedValue = DropDown.getAttribute("value");
-System.out.println(selectedValue);
+//        String selectedValue = DropDown.getAttribute("value");
+//        System.out.println(selectedValue);
 //		System.out.println(GetText);
-		DropDown.clear();
-		DropDown.sendKeys("pa");
-		for(WebElement options:dropdownOptions) {
-			if(options.getText().equalsIgnoreCase("Japan")) {
-				options.click();
-			}
-		}
-		String selectedValue1 = DropDown.getAttribute("value");
-		System.out.println(selectedValue1);
+//		DropDown.clear();
+//		DropDown.sendKeys("pa");
+//		for(WebElement options:dropdownOptions) {
+//			if(options.getText().equalsIgnoreCase("Japan")) {
+//				options.click();
+//			}
+//		}
+//		String selectedValue1 = DropDown.getAttribute("value");
+//		System.out.println(selectedValue1);
 
 		
 	}

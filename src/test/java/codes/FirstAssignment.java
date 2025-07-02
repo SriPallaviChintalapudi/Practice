@@ -38,6 +38,7 @@ public class FirstAssignment {
         PasswordTextBox.sendKeys("admin123");
 
         WebElement LoginBtn = driver.findElement(By.xpath("//button[contains(@class,'orangehrm-login-button')]"));
+        
         LoginBtn.submit();
         //Thread.sleep(3000);
     }
@@ -46,9 +47,22 @@ public class FirstAssignment {
 	//navigate to the admin page from the dashboard
 	public void TestCaseTwoAdminPAge() {
 		WebElement AdminPageLink = driver.findElement(By.xpath("//a[contains(@class,'main-menu-item')]//span[text()='Admin']"));
+		
+		
+		
+		
 		//WebElement AdminPageLink = driver.findElement(By.xpath("//span[text()='Admin']/ancestor::a"));
 		AdminPageLink.click();
 	}
+	
+	
+	
+	
+	//tagname[@class='value']
+	//tagname[contains(@class,'value')]
+	//tagname[text()='value']
+	
+	
 	
 	
 	@Test(priority = 3)
