@@ -1,3 +1,8 @@
+
+
+                             //Info : Assessment 5 - RahulShetty Drop down x paths For Selecting countries option//
+
+
 package codes;
 import java.util.List;
 import java.time.Duration;
@@ -15,7 +20,7 @@ import org.testng.asserts.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class Practice {
+public class FifthAssignment {
 	WebDriver driver = new ChromeDriver();
 	@BeforeTest
 	public void OPenURL() {
@@ -35,7 +40,7 @@ public class Practice {
 		System.out.println(getOption.getText());
 	}
 	@Test
-	public void TestCase2() {
+	public void TestCase2() throws Exception {
 		WebElement DropDown = driver.findElement(By.id("autocomplete"));
 		DropDown.click();
 		DropDown.sendKeys("ind");
@@ -49,13 +54,14 @@ public class Practice {
 //        String selectedValue = DropDown.getAttribute("value");
 //        System.out.println(selectedValue);
 //		System.out.println(GetText);
-//		DropDown.clear();
-//		DropDown.sendKeys("pa");
-//		for(WebElement options:dropdownOptions) {
-//			if(options.getText().equalsIgnoreCase("Japan")) {
-//				options.click();
-//			}
-//		}
+		DropDown.clear();
+		DropDown.sendKeys("pak");
+		List<WebElement> NewdropdownOptions = driver.findElements(By.xpath("//li[contains(@class, 'ui-menu-item')]/div"));
+		for(WebElement Options:NewdropdownOptions) {
+			if(Options.getText().equalsIgnoreCase("pakistan")) {
+				Options.click();
+			}
+		}
 //		String selectedValue1 = DropDown.getAttribute("value");
 //		System.out.println(selectedValue1);
 

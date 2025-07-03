@@ -1,3 +1,12 @@
+
+
+
+
+              ////Info : Assessment 1 - OrangeHrm Login //
+
+
+
+
 package codes;
 import java.util.List;
 import java.time.Duration;
@@ -193,7 +202,23 @@ public class FirstAssignment {
 		
 		
 		Assert.assertEquals(SelectedStatus, "Disabled", "Does not match");
-		System.out.println(SelectedStatus);}
+		System.out.println(SelectedStatus);
+		
+
+        WebElement CancelBtn = driver.findElement(By.xpath("//button[normalize-space()='Cancel' and @type='button']"));
+        CancelBtn.click();
+		}
+	
+	@Test(priority=5)
+	public void TestCaseFive() {
+		WebElement JobOption = driver.findElement(By.xpath("//span[@class='oxd-topbar-body-nav-tab-item' and normalize-space()='Job']"));
+		JobOption.click();
+		System.out.println("Job is selected");
+		
+		WebElement JobTitleItem = driver.findElement(By.xpath("//a[@class='oxd-topbar-body-nav-tab-link']"));
+		JobTitleItem.click();
+		
+	}
 
 @AfterTest
 public void CloseURL() {
