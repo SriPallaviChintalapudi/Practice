@@ -51,4 +51,17 @@ public class SeventhAssignment {
 		WebElement reloadOption = driver.findElement(By.linkText("Reload"));
 		reloadOption.click();
 	}
+	@Test(priority=3)
+	public void TestCase3() {
+		driver.navigate().to("https://demo.guru99.com/test/drag_drop.html");
+		Actions actions = new Actions(driver);
+		WebElement Source = driver.findElement(By.xpath("//a[@class='button button-orange' and normalize-space(text())='5000']"));
+		WebElement Target = driver.findElement(By.xpath("//ol[@id='amt7']/li[@class='placeholder']"));
+		actions.dragAndDrop(Source, Target).perform();
+	}
+	
+	@AfterTest
+	public void CloseURL() {
+		driver.close();
+	}
 }
