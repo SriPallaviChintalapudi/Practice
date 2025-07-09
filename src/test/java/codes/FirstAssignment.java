@@ -58,14 +58,9 @@ public class FirstAssignment {
 		WebElement AdminPageLink = driver.findElement(By.xpath("//a[contains(@class,'main-menu-item')]//span[text()='Admin']"));
 		
 		
-		
-		
 		//WebElement AdminPageLink = driver.findElement(By.xpath("//span[text()='Admin']/ancestor::a"));
 		AdminPageLink.click();
 	}
-	
-	
-	
 	
 	//tagname[@class='value']
 	//tagname[contains(@class,'value')]

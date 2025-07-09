@@ -1,6 +1,6 @@
 
+                          //Info : Assessment3 - Test Pages X paths//
 
-                                //Info : Assessment 4 - Rahul Shetty Table Data//
 
 package codes;
 import java.util.ArrayList;
@@ -20,7 +20,7 @@ import org.testng.asserts.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class FourthAssignmenets {
+public class ThirdAssignmenet {
 	WebDriver driver = new ChromeDriver();
 	
 	@BeforeTest
@@ -30,22 +30,21 @@ public class FourthAssignmenets {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
 	}
-	
 	@Test
-	public void TestCase2() {
-		driver.navigate().to("https://rahulshettyacademy.com/AutomationPractice/");
-		//table[@id='product']//tr[position()>1]//td"
-		List <WebElement> List2 = driver.findElements(By.xpath("//table[@class = 'table-display']//tr[position()>1]//td"));
-		List<String> AllData = new ArrayList<>();
-		System.out.println("Table2 Data is: ");
-		for(WebElement list2 : List2) {
-			AllData.add(list2.getText());
-		}
-		for(String AllData2 : AllData) {
-			
-			System.out.println(AllData2);
-		}
-	}
+	public void TestCase1() {
+	        List<WebElement> data = driver.findElements(By.xpath("//table[@id='mytable']//tr[position()>1]/td"));
+	        List<String> completedata = new ArrayList<>();
+	        System.out.println("Table1 Data is: ");
+	        for (WebElement DATA : data) {
+	        	completedata.add(DATA.getText());
+	        } 
+	        for (String COMPLETEDATA : completedata) {
+	        	
+	            System.out.println(COMPLETEDATA);
+	        }
+	    }
+	
+	
 
 	@AfterTest
 	public void CloseURL() {
