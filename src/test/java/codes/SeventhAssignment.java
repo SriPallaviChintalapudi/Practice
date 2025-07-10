@@ -1,6 +1,6 @@
 
 
-                      //Info : Assessment 7 - MouseOver in rahul shetty//
+                      //Info : Assessment 7 - MouseOver in rahul shetty and Drag and drop using actions class in demo website
 
 
 
@@ -65,6 +65,7 @@ public class SeventhAssignment {
 		driver.navigate().refresh();
 
 	}
+	
 	
 	@AfterTest
 	public void CloseURL() {

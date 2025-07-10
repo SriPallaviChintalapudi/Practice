@@ -118,4 +118,5 @@ public class TenthAssignment {
 	public void CloseURL() {
 		driver.quit();
 	}
+
 }

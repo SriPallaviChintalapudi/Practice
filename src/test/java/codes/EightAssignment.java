@@ -54,11 +54,15 @@ public class EightAssignment {
 		WebElement nameText = driver.findElement(By.id("name"));
 		nameText.click();
 		nameText.sendKeys("Pallavi");
-		WebElement ConfirmBtn = driver.findElement(By.id("confirmbtn"));
-		ConfirmBtn.click();
+
+		
+		WebElement AlertBtn = driver.findElement(By.id("alertbtn"));
+		AlertBtn.click();
 		String text = driver.switchTo().alert().getText();
-		System.out.println("The text is:"+text);
-		driver.switchTo().alert().dismiss();
+		System.out.println("the text is: "+text);
+		driver.switchTo().alert().accept();
 	}
+	
+	
 	
 }
