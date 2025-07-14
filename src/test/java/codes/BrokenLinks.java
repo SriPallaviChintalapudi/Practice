@@ -34,7 +34,7 @@ public class BrokenLinks {
 				connection.setConnectTimeout(3000);
 				connection.connect();
 				int ResponseCode = connection.getResponseCode();
-				if(ResponseCode>=400) {
+				if(ResponseCode >= 400) {
 					System.out.println(ResponseCode + " Broken Link " +url);
 				}
 				else {
@@ -46,6 +46,5 @@ public class BrokenLinks {
 			}
 		}	
 	}
-
 }
 
