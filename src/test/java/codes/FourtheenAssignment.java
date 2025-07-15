@@ -4,6 +4,8 @@ import java.time.Duration;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.*;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 public class FourtheenAssignment {
@@ -52,16 +54,17 @@ public class FourtheenAssignment {
 		//To select Locations in dropdown
 		WebElement LocationsItem = driver.findElement(By.linkText("Locations"));
 		LocationsItem.click();
-		WebElement ScrollDownBtn = driver.findElement(By.xpath("//div[text()='City']/div"));
+		WebElement ScrollDownBtn = driver.findElement(By.xpath("//div[text()='Country']/div"));
 		ScrollDownBtn.click();
 		
 		
 		WebElement DescendingOption = driver.findElement(By.xpath("//div[text()='City']/following::span[text()='Descending'][1]"));
-//		JavascriptExecutor Js = (JavascriptExecutor)driver;
-//		Js.executeScript("arguments[0].scrollIntoView();",DescendingOption);
+		JavascriptExecutor Js = (JavascriptExecutor)driver;
+		Js.executeScript("arguments[0].click();",DescendingOption);
 		
-		Actions action =new Actions(driver);
-		action.sendKeys(Keys.PAGE_DOWN).click(DescendingOption).build().perform();
+//		Actions action =new Actions(driver);
+//		action.sendKeys(Keys.PAGE_DOWN).click(DescendingOption).build().perform();
 		//DescendingOption.click();
+		
 	}
 }
