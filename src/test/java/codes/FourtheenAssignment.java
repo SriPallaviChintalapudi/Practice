@@ -54,7 +54,7 @@ public class FourtheenAssignment {
 		//To select Locations in dropdown
 		WebElement LocationsItem = driver.findElement(By.linkText("Locations"));
 		LocationsItem.click();
-		WebElement ScrollDownBtn = driver.findElement(By.xpath("//div[text()='Country']/div"));
+		WebElement ScrollDownBtn = driver.findElement(By.xpath("//div[text()='City']/div"));
 		ScrollDownBtn.click();
 		
 		
@@ -67,4 +67,15 @@ public class FourtheenAssignment {
 		//DescendingOption.click();
 		
 	}
+//	
+//	@Test(priority=4)
+//	public void TestCaseFour() {
+//		WebElement ScrollDownBtn = driver.findElement(By.xpath("//div[text()='City']/div"));
+//		ScrollDownBtn.click();
+//		
+//		
+//		WebElement AscendingOption = driver.findElement(By.xpath("//div[text()='City']/following::span[text()='Ascending'][1]"));
+//		JavascriptExecutor Js = (JavascriptExecutor)driver;
+//		Js.executeScript("arguments[0].click();",AscendingOption);
+//	}
 }
